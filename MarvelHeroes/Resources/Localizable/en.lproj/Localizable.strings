@@ -1,0 +1,4 @@
+"search" = "Search";
+"loading" = "Loading";
+"defaultError" = "An error occurred during the request, please try reload the page.";
+"ok" = "OK";

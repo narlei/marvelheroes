@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ibv-2v-Nbn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Person Detail View Controller-->
+        <scene sceneID="DhL-Nm-XAU">
+            <objects>
+                <viewController id="Ibv-2v-Nbn" customClass="PersonDetailViewController" customModule="MarvelHeroes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nOx-xT-GKm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uxl-Dx-kak">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uxl-Dx-kak" firstAttribute="leading" secondItem="FYI-Rf-hMe" secondAttribute="leading" id="cqN-QS-9bF"/>
+                            <constraint firstItem="Uxl-Dx-kak" firstAttribute="trailing" secondItem="FYI-Rf-hMe" secondAttribute="trailing" id="fyY-ob-g79"/>
+                            <constraint firstItem="Uxl-Dx-kak" firstAttribute="top" secondItem="nOx-xT-GKm" secondAttribute="top" id="iwy-Tf-8E9"/>
+                            <constraint firstItem="Uxl-Dx-kak" firstAttribute="bottom" secondItem="FYI-Rf-hMe" secondAttribute="bottom" id="saw-Mz-XW0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FYI-Rf-hMe"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewWorks" destination="Uxl-Dx-kak" id="gLQ-DO-FQe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tkc-Oo-ApD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

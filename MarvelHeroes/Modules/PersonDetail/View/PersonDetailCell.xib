@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="216" id="dpA-ic-OK1" customClass="PersonDetailCell" customModule="MarvelHeroes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dpA-ic-OK1" id="u9Y-eC-h12">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoT-Ml-GtT">
+                        <rect key="frame" x="20" y="11" width="343" height="23"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BGD-ce-XFV">
+                        <rect key="frame" x="0.0" y="42" width="375" height="167"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="167" id="tGK-Uf-fVC"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fFZ-nM-OgG">
+                            <size key="itemSize" width="117" height="158"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BGD-ce-XFV" firstAttribute="leading" secondItem="u9Y-eC-h12" secondAttribute="leading" id="4Zc-jG-1ZY"/>
+                    <constraint firstAttribute="trailing" secondItem="BGD-ce-XFV" secondAttribute="trailing" id="J1L-Vo-qvO"/>
+                    <constraint firstItem="eoT-Ml-GtT" firstAttribute="leading" secondItem="u9Y-eC-h12" secondAttribute="leading" constant="20" id="O71-fi-74p"/>
+                    <constraint firstItem="BGD-ce-XFV" firstAttribute="top" secondItem="eoT-Ml-GtT" secondAttribute="bottom" constant="8" id="hZx-SD-ZSg"/>
+                    <constraint firstAttribute="trailing" secondItem="eoT-Ml-GtT" secondAttribute="trailing" constant="12" id="lHK-bD-bHH"/>
+                    <constraint firstAttribute="bottom" secondItem="BGD-ce-XFV" secondAttribute="bottom" constant="6.5" id="xuv-KE-Br1"/>
+                    <constraint firstItem="eoT-Ml-GtT" firstAttribute="top" secondItem="u9Y-eC-h12" secondAttribute="top" constant="11" id="yC8-AC-4Dn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="collectionViewItems" destination="BGD-ce-XFV" id="22j-5Y-UKu"/>
+                <outlet property="labelType" destination="eoT-Ml-GtT" id="aYG-jp-9Sh"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="-80.959520239880064"/>
+        </tableViewCell>
+    </objects>
+</document>
