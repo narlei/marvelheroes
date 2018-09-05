@@ -46,6 +46,9 @@ enum Constants {
 ...
 ````
 
+## R.swift 
+Run the project for the first time to create `R.generated.swift` file, and Run again to see the app working.
+
 ## Design
 
 See the prototype [here](https://bit.ly/2Ccogvl). You can run the protorype [here](https://bit.ly/2CofCdj).
